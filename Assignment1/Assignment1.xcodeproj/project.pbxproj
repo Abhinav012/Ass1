@@ -14,9 +14,9 @@
 		B18E9691239F6F64003E2BAC /* Assignment1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B18E968F239F6F64003E2BAC /* Assignment1.xcdatamodeld */; };
 		B18E9693239F6F65003E2BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18E9692239F6F65003E2BAC /* Assets.xcassets */; };
 		B18E9696239F6F65003E2BAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18E9694239F6F65003E2BAC /* LaunchScreen.storyboard */; };
-		B18E96A2239F8668003E2BAC /* AssignmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E96A1239F8668003E2BAC /* AssignmentViewController.swift */; };
-		B18E96A4239F867B003E2BAC /* AssignmentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E96A3239F867B003E2BAC /* AssignmentListViewController.swift */; };
 		B18E96A6239F9CCC003E2BAC /* AssignmentListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E96A5239F9CCC003E2BAC /* AssignmentListTableViewController.swift */; };
+		B18E96A8239FAA6F003E2BAC /* sample.xml in Sources */ = {isa = PBXBuildFile; fileRef = B18E96A7239FAA6F003E2BAC /* sample.xml */; };
+		B18E96AD239FB58F003E2BAC /* XMLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E96AC239FB58F003E2BAC /* XMLModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,9 @@
 		B18E9692239F6F65003E2BAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B18E9695239F6F65003E2BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B18E9697239F6F65003E2BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B18E96A1239F8668003E2BAC /* AssignmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentViewController.swift; sourceTree = "<group>"; };
-		B18E96A3239F867B003E2BAC /* AssignmentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentListViewController.swift; sourceTree = "<group>"; };
 		B18E96A5239F9CCC003E2BAC /* AssignmentListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentListTableViewController.swift; sourceTree = "<group>"; };
+		B18E96A7239FAA6F003E2BAC /* sample.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = sample.xml; sourceTree = "<group>"; };
+		B18E96AC239FB58F003E2BAC /* XMLModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLModel.swift; sourceTree = "<group>"; };
 		E747CC0933C2EC959BD232C2 /* Pods_Assignment1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF834BA8816F513B8AE827C7 /* Pods-Assignment1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment1.debug.xcconfig"; path = "Target Support Files/Pods-Assignment1/Pods-Assignment1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,18 +86,26 @@
 		B18E9687239F6F64003E2BAC /* Assignment1 */ = {
 			isa = PBXGroup;
 			children = (
+				B18E96AB239FAB97003E2BAC /* Task 6 */,
 				B18E9688239F6F64003E2BAC /* AppDelegate.swift */,
-				B18E968A239F6F64003E2BAC /* ViewController.swift */,
 				B18E968C239F6F64003E2BAC /* Main.storyboard */,
 				B18E9692239F6F65003E2BAC /* Assets.xcassets */,
 				B18E9694239F6F65003E2BAC /* LaunchScreen.storyboard */,
 				B18E9697239F6F65003E2BAC /* Info.plist */,
 				B18E968F239F6F64003E2BAC /* Assignment1.xcdatamodeld */,
-				B18E96A1239F8668003E2BAC /* AssignmentViewController.swift */,
-				B18E96A3239F867B003E2BAC /* AssignmentListViewController.swift */,
 				B18E96A5239F9CCC003E2BAC /* AssignmentListTableViewController.swift */,
 			);
 			path = Assignment1;
+			sourceTree = "<group>";
+		};
+		B18E96AB239FAB97003E2BAC /* Task 6 */ = {
+			isa = PBXGroup;
+			children = (
+				B18E96A7239FAA6F003E2BAC /* sample.xml */,
+				B18E96AC239FB58F003E2BAC /* XMLModel.swift */,
+				B18E968A239F6F64003E2BAC /* ViewController.swift */,
+			);
+			path = "Task 6";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,10 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B18E96A8239FAA6F003E2BAC /* sample.xml in Sources */,
 				B18E968B239F6F64003E2BAC /* ViewController.swift in Sources */,
-				B18E96A4239F867B003E2BAC /* AssignmentListViewController.swift in Sources */,
 				B18E96A6239F9CCC003E2BAC /* AssignmentListTableViewController.swift in Sources */,
-				B18E96A2239F8668003E2BAC /* AssignmentViewController.swift in Sources */,
+				B18E96AD239FB58F003E2BAC /* XMLModel.swift in Sources */,
 				B18E9691239F6F64003E2BAC /* Assignment1.xcdatamodeld in Sources */,
 				B18E9689239F6F64003E2BAC /* AppDelegate.swift in Sources */,
 			);

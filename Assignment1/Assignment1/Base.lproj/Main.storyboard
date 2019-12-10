@@ -38,12 +38,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="PfU-z8-8ni">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="xmlCell" textLabel="CIb-bp-Xwa" style="IBUITableViewCellStyleDefault" id="PfU-z8-8ni">
                                 <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PfU-z8-8ni" id="rPm-Ql-n5L">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Task 6 XML Parsing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CIb-bp-Xwa">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="6PA-Tc-k0T" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="Lsr-as-Ol3"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JSONCell" textLabel="iFR-FJ-vUA" style="IBUITableViewCellStyleDefault" id="rX7-1m-2Ri">
+                                <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rX7-1m-2Ri" id="tuC-cB-bkY">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Task 6 JSON Parsing using Encoder/Decoder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iFR-FJ-vUA">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -64,7 +93,21 @@
                     <view key="view" contentMode="scaleToFill" id="7zD-rV-glt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Ao-au-bYu">
+                                <rect key="frame" x="16" y="93" width="343" height="545"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fZQ-ja-6ec" firstAttribute="bottom" secondItem="1Ao-au-bYu" secondAttribute="bottom" constant="29" id="3AN-Se-5Fp"/>
+                            <constraint firstItem="1Ao-au-bYu" firstAttribute="leading" secondItem="fZQ-ja-6ec" secondAttribute="leading" constant="16" id="XBj-Jx-9WW"/>
+                            <constraint firstItem="1Ao-au-bYu" firstAttribute="top" secondItem="fZQ-ja-6ec" secondAttribute="top" constant="29" id="czz-9K-9yJ"/>
+                            <constraint firstItem="fZQ-ja-6ec" firstAttribute="trailing" secondItem="1Ao-au-bYu" secondAttribute="trailing" constant="16" id="z4U-Ge-wND"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="fZQ-ja-6ec"/>
                     </view>
                     <navigationItem key="navigationItem" id="N0C-tk-cn4">
@@ -76,11 +119,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="menuButton" destination="Omm-fV-lYu" id="oL9-bT-OuN"/>
+                        <outlet property="xmlDisplayTxtView" destination="1Ao-au-bYu" id="oaj-gU-rbY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Yf-Uo-fXx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1719.2" y="129.98500749625188"/>
+            <point key="canvasLocation" x="1688.8" y="-31.03448275862069"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ua4-ky-gxa">
@@ -98,7 +142,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efl-YW-9gX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="129.98500749625188"/>
+            <point key="canvasLocation" x="742" y="-31"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Lsr-as-Ol3"/>
+    </inferredMetricsTieBreakers>
 </document>
