@@ -7,14 +7,26 @@
 //
 
 import UIKit
+import SWRevealViewController
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var menuButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
     }
 
 
+    @IBAction func menuBtnTapped(_ sender: Any) {
+        
+        let buttonTitle = (sender as AnyObject).currentTitle
+        self.revealViewController()?.rearViewController.performSegue(withIdentifier: buttonTitle as! String, sender: self.revealViewController()?.rearViewController)
+    }
 }
 
