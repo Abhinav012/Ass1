@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		002570DB091425345B4D8831 /* Pods_Assignment1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E747CC0933C2EC959BD232C2 /* Pods_Assignment1.framework */; };
+		B11FF17423A0B7F50036561F /* JSONParsedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FF17323A0B7F50036561F /* JSONParsedViewController.swift */; };
+		B11FF17623A0C0500036561F /* MyGithubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FF17523A0C0500036561F /* MyGithubModel.swift */; };
 		B18E9689239F6F64003E2BAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E9688239F6F64003E2BAC /* AppDelegate.swift */; };
 		B18E968B239F6F64003E2BAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E968A239F6F64003E2BAC /* ViewController.swift */; };
 		B18E968E239F6F64003E2BAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18E968C239F6F64003E2BAC /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		9B80265AF085D3AA9E7EE58F /* Pods-Assignment1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment1.release.xcconfig"; path = "Target Support Files/Pods-Assignment1/Pods-Assignment1.release.xcconfig"; sourceTree = "<group>"; };
+		B11FF17323A0B7F50036561F /* JSONParsedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParsedViewController.swift; sourceTree = "<group>"; };
+		B11FF17523A0C0500036561F /* MyGithubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGithubModel.swift; sourceTree = "<group>"; };
 		B18E9685239F6F64003E2BAC /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18E9688239F6F64003E2BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B18E968A239F6F64003E2BAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +69,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B11FF17123A0B75F0036561F /* XML Parse */ = {
+			isa = PBXGroup;
+			children = (
+				B18E96A7239FAA6F003E2BAC /* sample.xml */,
+				B18E96AC239FB58F003E2BAC /* XMLModel.swift */,
+				B18E968A239F6F64003E2BAC /* ViewController.swift */,
+			);
+			path = "XML Parse";
+			sourceTree = "<group>";
+		};
+		B11FF17223A0B79E0036561F /* JSON Parse */ = {
+			isa = PBXGroup;
+			children = (
+				B11FF17323A0B7F50036561F /* JSONParsedViewController.swift */,
+				B11FF17523A0C0500036561F /* MyGithubModel.swift */,
+			);
+			path = "JSON Parse";
+			sourceTree = "<group>";
+		};
 		B18E967C239F6F64003E2BAC = {
 			isa = PBXGroup;
 			children = (
@@ -101,9 +124,8 @@
 		B18E96AB239FAB97003E2BAC /* Task 6 */ = {
 			isa = PBXGroup;
 			children = (
-				B18E96A7239FAA6F003E2BAC /* sample.xml */,
-				B18E96AC239FB58F003E2BAC /* XMLModel.swift */,
-				B18E968A239F6F64003E2BAC /* ViewController.swift */,
+				B11FF17123A0B75F0036561F /* XML Parse */,
+				B11FF17223A0B79E0036561F /* JSON Parse */,
 			);
 			path = "Task 6";
 			sourceTree = "<group>";
@@ -223,7 +245,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B11FF17623A0C0500036561F /* MyGithubModel.swift in Sources */,
 				B18E96A8239FAA6F003E2BAC /* sample.xml in Sources */,
+				B11FF17423A0B7F50036561F /* JSONParsedViewController.swift in Sources */,
 				B18E968B239F6F64003E2BAC /* ViewController.swift in Sources */,
 				B18E96A6239F9CCC003E2BAC /* AssignmentListTableViewController.swift in Sources */,
 				B18E96AD239FB58F003E2BAC /* XMLModel.swift in Sources */,
