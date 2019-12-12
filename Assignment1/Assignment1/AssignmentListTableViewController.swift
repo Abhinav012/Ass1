@@ -29,7 +29,7 @@ class AssignmentListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return 3
     }
 
     
@@ -39,10 +39,12 @@ class AssignmentListTableViewController: UITableViewController {
           let cell = tableView.dequeueReusableCell(withIdentifier: "xmlCell", for: indexPath)
           return cell
         }
-        //else if indexPath.row == 1{
+        else if indexPath.row == 1{
           let cell = tableView.dequeueReusableCell(withIdentifier: "JSONCell", for: indexPath)
-        
-        
+            return cell
+            
+        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SQLiteOperationCell", for: indexPath)
         return cell
     }
     

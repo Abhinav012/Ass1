@@ -1,17 +1,14 @@
 //
-//  ViewController.swift
+//  ParsingManager.swift
 //  Assignment1
 //
-//  Created by Thanos on 10/12/19.
+//  Created by Thanos on 11/12/19.
 //  Copyright © 2019 Thanos. All rights reserved.
 //
 
-import UIKit
-import SWRevealViewController
+import Foundation
 
-class ViewController: UIViewController {
-    @IBOutlet weak var xmlDisplayTxtView: UITextView!
-    
+class ParsingManager: NSObject {
     var finalDisplayString = ""
     let xmlString: String = """
 <items>
@@ -29,7 +26,6 @@ class ViewController: UIViewController {
     </item>
 </items>
 """
-    let xmlPath = Bundle.main.path(forResource: "sample", ofType: "xml")
     var xmlData:Data?
     var xmlParser: XMLParser?
     
@@ -37,15 +33,7 @@ class ViewController: UIViewController {
     var item = Item();
     var foundCharacters = "";
     
-    @IBOutlet weak var menuButton: UIBarButtonItem!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-       
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
+    func parseXML(){
         
         finalDisplayString.append("\(xmlString)\n\n")
         finalDisplayString.append("\n\nPARSED STRING")
@@ -54,22 +42,11 @@ class ViewController: UIViewController {
         
         xmlParser?.delegate = self
         xmlParser?.parse()
-       // }
         
     }
-
-
-    @IBAction func menuBtnTapped(_ sender: Any) {
-        
-        let buttonTitle = (sender as AnyObject).currentTitle
-        self.revealViewController()?.rearViewController.performSegue(withIdentifier: buttonTitle as! String, sender: self.revealViewController()?.rearViewController)
-    }
-    
-    
 }
 
-extension ViewController : XMLParserDelegate{
-    
+extension ParsingManager: XMLParserDelegate{
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
         
         if elementName == "tag" {
@@ -127,7 +104,5 @@ extension ViewController : XMLParserDelegate{
             
         }
         
-        xmlDisplayTxtView.text = finalDisplayString
     }
 }
-
