@@ -10,6 +10,10 @@
 		002570DB091425345B4D8831 /* Pods_Assignment1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E747CC0933C2EC959BD232C2 /* Pods_Assignment1.framework */; };
 		B109C6A023A214EF000AF35A /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109C69F23A214EF000AF35A /* Record.swift */; };
 		B109C6A323A2194A000AF35A /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109C6A223A2194A000AF35A /* SQLiteManager.swift */; };
+		B109C6A823A236E1000AF35A /* CoreDataOperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109C6A723A236E1000AF35A /* CoreDataOperationViewController.swift */; };
+		B109C6AB23A2371A000AF35A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109C6AA23A2371A000AF35A /* Product.swift */; };
+		B109C6AD23A23742000AF35A /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109C6AC23A23742000AF35A /* DataManager.swift */; };
+		B109C6B023A24D3D000AF35A /* Assignment1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B109C6AE23A24D3D000AF35A /* Assignment1.xcdatamodeld */; };
 		B11FF17423A0B7F50036561F /* JSONParsedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FF17323A0B7F50036561F /* JSONParsedViewController.swift */; };
 		B11FF17623A0C0500036561F /* MyGithubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FF17523A0C0500036561F /* MyGithubModel.swift */; };
 		B11FF17923A0F04A0036561F /* ParsingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FF17823A0F04A0036561F /* ParsingManager.swift */; };
@@ -18,7 +22,6 @@
 		B18E9689239F6F64003E2BAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E9688239F6F64003E2BAC /* AppDelegate.swift */; };
 		B18E968B239F6F64003E2BAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E968A239F6F64003E2BAC /* ViewController.swift */; };
 		B18E968E239F6F64003E2BAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18E968C239F6F64003E2BAC /* Main.storyboard */; };
-		B18E9691239F6F64003E2BAC /* Assignment1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B18E968F239F6F64003E2BAC /* Assignment1.xcdatamodeld */; };
 		B18E9693239F6F65003E2BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B18E9692239F6F65003E2BAC /* Assets.xcassets */; };
 		B18E9696239F6F65003E2BAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B18E9694239F6F65003E2BAC /* LaunchScreen.storyboard */; };
 		B18E96A6239F9CCC003E2BAC /* AssignmentListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E96A5239F9CCC003E2BAC /* AssignmentListTableViewController.swift */; };
@@ -44,6 +47,10 @@
 		B109C69723A20F26000AF35A /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B109C69F23A214EF000AF35A /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		B109C6A223A2194A000AF35A /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
+		B109C6A723A236E1000AF35A /* CoreDataOperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataOperationViewController.swift; sourceTree = "<group>"; };
+		B109C6AA23A2371A000AF35A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		B109C6AC23A23742000AF35A /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		B109C6AF23A24D3D000AF35A /* Assignment1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Assignment1.xcdatamodel; sourceTree = "<group>"; };
 		B11FF17323A0B7F50036561F /* JSONParsedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParsedViewController.swift; sourceTree = "<group>"; };
 		B11FF17523A0C0500036561F /* MyGithubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGithubModel.swift; sourceTree = "<group>"; };
 		B11FF17823A0F04A0036561F /* ParsingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingManager.swift; sourceTree = "<group>"; };
@@ -53,7 +60,6 @@
 		B18E9688239F6F64003E2BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B18E968A239F6F64003E2BAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B18E968D239F6F64003E2BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B18E9690239F6F64003E2BAC /* Assignment1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Assignment1.xcdatamodel; sourceTree = "<group>"; };
 		B18E9692239F6F65003E2BAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B18E9695239F6F65003E2BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B18E9697239F6F65003E2BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +113,32 @@
 			children = (
 				B109C69F23A214EF000AF35A /* Record.swift */,
 				B109C6A223A2194A000AF35A /* SQLiteManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B109C6A623A236B1000AF35A /* Task 9 */ = {
+			isa = PBXGroup;
+			children = (
+				B109C6B123A250C6000AF35A /* Model */,
+				B109C6A923A236E7000AF35A /* Controller */,
+			);
+			path = "Task 9";
+			sourceTree = "<group>";
+		};
+		B109C6A923A236E7000AF35A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B109C6A723A236E1000AF35A /* CoreDataOperationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B109C6B123A250C6000AF35A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B109C6AA23A2371A000AF35A /* Product.swift */,
+				B109C6AC23A23742000AF35A /* DataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -227,14 +259,15 @@
 		B18E9687239F6F64003E2BAC /* Assignment1 */ = {
 			isa = PBXGroup;
 			children = (
+				B109C6A623A236B1000AF35A /* Task 9 */,
 				B17566EE23A1F8A2004D4DE4 /* Task 8 */,
 				B18E96AB239FAB97003E2BAC /* Task 6 */,
 				B11FF18223A106460036561F /* View */,
 				B11FF18123A1062C0036561F /* Resources */,
 				B18E9688239F6F64003E2BAC /* AppDelegate.swift */,
 				B18E9697239F6F65003E2BAC /* Info.plist */,
-				B18E968F239F6F64003E2BAC /* Assignment1.xcdatamodeld */,
 				B18E96A5239F9CCC003E2BAC /* AssignmentListTableViewController.swift */,
+				B109C6AE23A24D3D000AF35A /* Assignment1.xcdatamodeld */,
 			);
 			path = Assignment1;
 			sourceTree = "<group>";
@@ -364,17 +397,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B109C6AB23A2371A000AF35A /* Product.swift in Sources */,
+				B109C6AD23A23742000AF35A /* DataManager.swift in Sources */,
 				B11FF17623A0C0500036561F /* MyGithubModel.swift in Sources */,
 				B18E96A8239FAA6F003E2BAC /* sample.xml in Sources */,
 				B17566F023A1F8CD004D4DE4 /* SQLiteOperationsViewController.swift in Sources */,
+				B109C6A823A236E1000AF35A /* CoreDataOperationViewController.swift in Sources */,
 				B109C6A323A2194A000AF35A /* SQLiteManager.swift in Sources */,
 				B11FF17423A0B7F50036561F /* JSONParsedViewController.swift in Sources */,
 				B11FF17923A0F04A0036561F /* ParsingManager.swift in Sources */,
 				B18E968B239F6F64003E2BAC /* ViewController.swift in Sources */,
+				B109C6B023A24D3D000AF35A /* Assignment1.xcdatamodeld in Sources */,
 				B109C6A023A214EF000AF35A /* Record.swift in Sources */,
 				B18E96A6239F9CCC003E2BAC /* AssignmentListTableViewController.swift in Sources */,
 				B18E96AD239FB58F003E2BAC /* XMLModel.swift in Sources */,
-				B18E9691239F6F64003E2BAC /* Assignment1.xcdatamodeld in Sources */,
 				B11FF17E23A0F4130036561F /* JSONParsingManager.swift in Sources */,
 				B18E9689239F6F64003E2BAC /* AppDelegate.swift in Sources */,
 			);
@@ -582,12 +618,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		B18E968F239F6F64003E2BAC /* Assignment1.xcdatamodeld */ = {
+		B109C6AE23A24D3D000AF35A /* Assignment1.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				B18E9690239F6F64003E2BAC /* Assignment1.xcdatamodel */,
+				B109C6AF23A24D3D000AF35A /* Assignment1.xcdatamodel */,
 			);
-			currentVersion = B18E9690239F6F64003E2BAC /* Assignment1.xcdatamodel */;
+			currentVersion = B109C6AF23A24D3D000AF35A /* Assignment1.xcdatamodel */;
 			path = Assignment1.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

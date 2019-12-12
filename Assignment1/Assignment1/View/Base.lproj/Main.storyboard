@@ -99,6 +99,26 @@
                                     <segue destination="s6A-MR-IQf" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="FUx-TO-iRQ"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoreDataCell" textLabel="4Zd-R9-3nY" style="IBUITableViewCellStyleDefault" id="bk0-JW-k8Y">
+                                <rect key="frame" x="0.0" y="187.5" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bk0-JW-k8Y" id="51a-tF-B9S">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Task 9 CRUD Operation Core Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Zd-R9-3nY">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="pbh-ET-jS6" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="XcV-JA-Or9"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="tBx-bG-mic" id="29N-Xo-E3u"/>
@@ -328,6 +348,80 @@ updated_at: "2017-05-20T05:33:11Z"
             </objects>
             <point key="canvasLocation" x="1688.8" y="1762.6686656671666"/>
         </scene>
+        <!--Core Data Operation View Controller-->
+        <scene sceneID="x5g-EZ-bJ8">
+            <objects>
+                <viewController id="2tR-LF-jhs" customClass="CoreDataOperationViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Tl-zR-Y0m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mo3-p6-wDY">
+                                <rect key="frame" x="113" y="145" width="149" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="fCF-Gg-T9D"/>
+                                </constraints>
+                                <state key="normal" title="Insert Product Details"/>
+                                <connections>
+                                    <action selector="insertProductDetails:" destination="2tR-LF-jhs" eventType="touchUpInside" id="spd-Ze-9eO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihu-C6-EqE">
+                                <rect key="frame" x="107.5" y="246" width="160" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="Jh3-BQ-uju"/>
+                                </constraints>
+                                <state key="normal" title="Update Product Details"/>
+                                <connections>
+                                    <action selector="updateProductDetails:" destination="2tR-LF-jhs" eventType="touchUpInside" id="cwi-bQ-gg5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c24-ce-vOd">
+                                <rect key="frame" x="120.5" y="317" width="134" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="HBg-jD-lef"/>
+                                </constraints>
+                                <state key="normal" title="List Product Details"/>
+                                <connections>
+                                    <action selector="listProductDetails:" destination="2tR-LF-jhs" eventType="touchUpInside" id="jEt-X8-yxI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfw-4g-8oP">
+                                <rect key="frame" x="105.5" y="390" width="164" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="OjM-8t-uxd"/>
+                                    <constraint firstAttribute="height" constant="30" id="tBl-D0-kwA"/>
+                                </constraints>
+                                <state key="normal" title="Remove Product Details"/>
+                                <connections>
+                                    <action selector="removeProductDetails:" destination="2tR-LF-jhs" eventType="touchUpInside" id="mjm-FT-4XI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Mo3-p6-wDY" firstAttribute="centerX" secondItem="wwv-br-14I" secondAttribute="centerX" id="EO2-o1-M95"/>
+                            <constraint firstItem="c24-ce-vOd" firstAttribute="top" secondItem="ihu-C6-EqE" secondAttribute="bottom" constant="41" id="PBd-ID-vK0"/>
+                            <constraint firstItem="ihu-C6-EqE" firstAttribute="top" secondItem="Mo3-p6-wDY" secondAttribute="bottom" constant="71" id="VKe-bx-vbR"/>
+                            <constraint firstItem="Zfw-4g-8oP" firstAttribute="top" secondItem="c24-ce-vOd" secondAttribute="bottom" constant="43" id="VhE-97-Pud"/>
+                            <constraint firstItem="Zfw-4g-8oP" firstAttribute="centerX" secondItem="wwv-br-14I" secondAttribute="centerX" id="XXa-Nd-dbZ"/>
+                            <constraint firstItem="c24-ce-vOd" firstAttribute="centerX" secondItem="wwv-br-14I" secondAttribute="centerX" id="ci4-xC-yuX"/>
+                            <constraint firstItem="ihu-C6-EqE" firstAttribute="centerX" secondItem="wwv-br-14I" secondAttribute="centerX" id="fqI-uN-IVx"/>
+                            <constraint firstItem="Mo3-p6-wDY" firstAttribute="top" secondItem="wwv-br-14I" secondAttribute="top" constant="81" id="juY-Z5-fXH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wwv-br-14I"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eGj-jb-iHQ">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="psn-tk-9iu"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="psn-tk-9iu" id="K7r-Zt-img"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ouY-Vk-n8r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689" y="2448"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="pyP-sQ-YDt">
             <objects>
@@ -420,7 +514,25 @@ updated_at: "2017-05-20T05:33:11Z"
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nch-WX-WpV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742" y="1763"/>
+            <point key="canvasLocation" x="714" y="1526"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WMU-nw-fty">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pbh-ET-jS6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6dT-tP-fnR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2tR-LF-jhs" kind="relationship" relationship="rootViewController" id="ugZ-QZ-XVQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NSt-Z5-bau" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="2477"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
