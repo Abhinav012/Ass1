@@ -11,6 +11,9 @@
 		B1041D9523A349CE0000B382 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1041D9423A349CE0000B382 /* RealmViewController.swift */; };
 		B1041D9723A34B550000B382 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1041D9623A34B550000B382 /* User.swift */; };
 		B1041D9923A34BCB0000B382 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1041D9823A34BCB0000B382 /* Pet.swift */; };
+		B1041DB123A38E530000B382 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1041DAE23A38E530000B382 /* Book.swift */; };
+		B1041DB223A38E530000B382 /* UserDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1041DAF23A38E530000B382 /* UserDefaultViewController.swift */; };
+		B1041DB323A38E530000B382 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1041DB023A38E530000B382 /* Owner.swift */; };
 		B109C6A023A214EF000AF35A /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109C69F23A214EF000AF35A /* Record.swift */; };
 		B109C6A323A2194A000AF35A /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109C6A223A2194A000AF35A /* SQLiteManager.swift */; };
 		B109C6A823A236E1000AF35A /* CoreDataOperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109C6A723A236E1000AF35A /* CoreDataOperationViewController.swift */; };
@@ -50,6 +53,9 @@
 		B1041D9423A349CE0000B382 /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
 		B1041D9623A34B550000B382 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B1041D9823A34BCB0000B382 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		B1041DAE23A38E530000B382 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		B1041DAF23A38E530000B382 /* UserDefaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultViewController.swift; sourceTree = "<group>"; };
+		B1041DB023A38E530000B382 /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		B109C69723A20F26000AF35A /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B109C69F23A214EF000AF35A /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		B109C6A223A2194A000AF35A /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
@@ -121,6 +127,16 @@
 				B1041D9423A349CE0000B382 /* RealmViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B1041DAD23A38E530000B382 /* Task 11 */ = {
+			isa = PBXGroup;
+			children = (
+				B1041DAE23A38E530000B382 /* Book.swift */,
+				B1041DAF23A38E530000B382 /* UserDefaultViewController.swift */,
+				B1041DB023A38E530000B382 /* Owner.swift */,
+			);
+			path = "Task 11";
 			sourceTree = "<group>";
 		};
 		B109C6A423A234AB000AF35A /* Controller */ = {
@@ -291,6 +307,7 @@
 		B18E9687239F6F64003E2BAC /* Assignment1 */ = {
 			isa = PBXGroup;
 			children = (
+				B1041DAD23A38E530000B382 /* Task 11 */,
 				B109C6B223A2543A000AF35A /* Task 10 */,
 				B109C6A623A236B1000AF35A /* Task 9 */,
 				B17566EE23A1F8A2004D4DE4 /* Task 8 */,
@@ -434,10 +451,12 @@
 				B109C6AD23A23742000AF35A /* DataManager.swift in Sources */,
 				B1041D9923A34BCB0000B382 /* Pet.swift in Sources */,
 				B11FF17623A0C0500036561F /* MyGithubModel.swift in Sources */,
+				B1041DB223A38E530000B382 /* UserDefaultViewController.swift in Sources */,
 				B18E96A8239FAA6F003E2BAC /* sample.xml in Sources */,
 				B17566F023A1F8CD004D4DE4 /* SQLiteOperationsViewController.swift in Sources */,
 				B109C6A823A236E1000AF35A /* CoreDataOperationViewController.swift in Sources */,
 				B109C6A323A2194A000AF35A /* SQLiteManager.swift in Sources */,
+				B1041DB123A38E530000B382 /* Book.swift in Sources */,
 				B11FF17423A0B7F50036561F /* JSONParsedViewController.swift in Sources */,
 				B11FF17923A0F04A0036561F /* ParsingManager.swift in Sources */,
 				B18E968B239F6F64003E2BAC /* ViewController.swift in Sources */,
@@ -447,6 +466,7 @@
 				B1041D9523A349CE0000B382 /* RealmViewController.swift in Sources */,
 				B1041D9723A34B550000B382 /* User.swift in Sources */,
 				B18E96AD239FB58F003E2BAC /* XMLModel.swift in Sources */,
+				B1041DB323A38E530000B382 /* Owner.swift in Sources */,
 				B11FF17E23A0F4130036561F /* JSONParsingManager.swift in Sources */,
 				B18E9689239F6F64003E2BAC /* AppDelegate.swift in Sources */,
 			);
