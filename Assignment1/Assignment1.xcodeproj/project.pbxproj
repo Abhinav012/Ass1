@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		002570DB091425345B4D8831 /* Pods_Assignment1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E747CC0933C2EC959BD232C2 /* Pods_Assignment1.framework */; };
+		B1041D9523A349CE0000B382 /* RealmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1041D9423A349CE0000B382 /* RealmViewController.swift */; };
+		B1041D9723A34B550000B382 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1041D9623A34B550000B382 /* User.swift */; };
+		B1041D9923A34BCB0000B382 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1041D9823A34BCB0000B382 /* Pet.swift */; };
 		B109C6A023A214EF000AF35A /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109C69F23A214EF000AF35A /* Record.swift */; };
 		B109C6A323A2194A000AF35A /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109C6A223A2194A000AF35A /* SQLiteManager.swift */; };
 		B109C6A823A236E1000AF35A /* CoreDataOperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109C6A723A236E1000AF35A /* CoreDataOperationViewController.swift */; };
@@ -44,6 +47,9 @@
 
 /* Begin PBXFileReference section */
 		9B80265AF085D3AA9E7EE58F /* Pods-Assignment1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment1.release.xcconfig"; path = "Target Support Files/Pods-Assignment1/Pods-Assignment1.release.xcconfig"; sourceTree = "<group>"; };
+		B1041D9423A349CE0000B382 /* RealmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmViewController.swift; sourceTree = "<group>"; };
+		B1041D9623A34B550000B382 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B1041D9823A34BCB0000B382 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		B109C69723A20F26000AF35A /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B109C69F23A214EF000AF35A /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		B109C6A223A2194A000AF35A /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
@@ -100,6 +106,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B1041D9A23A34C2E0000B382 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1041D9623A34B550000B382 /* User.swift */,
+				B1041D9823A34BCB0000B382 /* Pet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B1041D9B23A34C3E0000B382 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B1041D9423A349CE0000B382 /* RealmViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		B109C6A423A234AB000AF35A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +164,15 @@
 				B109C6AC23A23742000AF35A /* DataManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B109C6B223A2543A000AF35A /* Task 10 */ = {
+			isa = PBXGroup;
+			children = (
+				B1041D9B23A34C3E0000B382 /* Controller */,
+				B1041D9A23A34C2E0000B382 /* Model */,
+			);
+			path = "Task 10";
 			sourceTree = "<group>";
 		};
 		B11FF17123A0B75F0036561F /* XML Parse */ = {
@@ -259,6 +291,7 @@
 		B18E9687239F6F64003E2BAC /* Assignment1 */ = {
 			isa = PBXGroup;
 			children = (
+				B109C6B223A2543A000AF35A /* Task 10 */,
 				B109C6A623A236B1000AF35A /* Task 9 */,
 				B17566EE23A1F8A2004D4DE4 /* Task 8 */,
 				B18E96AB239FAB97003E2BAC /* Task 6 */,
@@ -399,6 +432,7 @@
 			files = (
 				B109C6AB23A2371A000AF35A /* Product.swift in Sources */,
 				B109C6AD23A23742000AF35A /* DataManager.swift in Sources */,
+				B1041D9923A34BCB0000B382 /* Pet.swift in Sources */,
 				B11FF17623A0C0500036561F /* MyGithubModel.swift in Sources */,
 				B18E96A8239FAA6F003E2BAC /* sample.xml in Sources */,
 				B17566F023A1F8CD004D4DE4 /* SQLiteOperationsViewController.swift in Sources */,
@@ -410,6 +444,8 @@
 				B109C6B023A24D3D000AF35A /* Assignment1.xcdatamodeld in Sources */,
 				B109C6A023A214EF000AF35A /* Record.swift in Sources */,
 				B18E96A6239F9CCC003E2BAC /* AssignmentListTableViewController.swift in Sources */,
+				B1041D9523A349CE0000B382 /* RealmViewController.swift in Sources */,
+				B1041D9723A34B550000B382 /* User.swift in Sources */,
 				B18E96AD239FB58F003E2BAC /* XMLModel.swift in Sources */,
 				B11FF17E23A0F4130036561F /* JSONParsingManager.swift in Sources */,
 				B18E9689239F6F64003E2BAC /* AppDelegate.swift in Sources */,
