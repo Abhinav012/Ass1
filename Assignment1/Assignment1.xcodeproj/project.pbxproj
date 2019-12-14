@@ -14,6 +14,7 @@
 		B1041DB123A38E530000B382 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1041DAE23A38E530000B382 /* Book.swift */; };
 		B1041DB223A38E530000B382 /* UserDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1041DAF23A38E530000B382 /* UserDefaultViewController.swift */; };
 		B1041DB323A38E530000B382 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1041DB023A38E530000B382 /* Owner.swift */; };
+		B1041DB823A39A1E0000B382 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1041DB723A39A1E0000B382 /* BrowserViewController.swift */; };
 		B109C6A023A214EF000AF35A /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109C69F23A214EF000AF35A /* Record.swift */; };
 		B109C6A323A2194A000AF35A /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109C6A223A2194A000AF35A /* SQLiteManager.swift */; };
 		B109C6A823A236E1000AF35A /* CoreDataOperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109C6A723A236E1000AF35A /* CoreDataOperationViewController.swift */; };
@@ -56,6 +57,7 @@
 		B1041DAE23A38E530000B382 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		B1041DAF23A38E530000B382 /* UserDefaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultViewController.swift; sourceTree = "<group>"; };
 		B1041DB023A38E530000B382 /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		B1041DB723A39A1E0000B382 /* BrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
 		B109C69723A20F26000AF35A /* SQLite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SQLite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B109C69F23A214EF000AF35A /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		B109C6A223A2194A000AF35A /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
@@ -137,6 +139,14 @@
 				B1041DB023A38E530000B382 /* Owner.swift */,
 			);
 			path = "Task 11";
+			sourceTree = "<group>";
+		};
+		B1041DB623A399160000B382 /* Task 12 */ = {
+			isa = PBXGroup;
+			children = (
+				B19EF0FD23A4ABDD00916EB9 /* Controller */,
+			);
+			path = "Task 12";
 			sourceTree = "<group>";
 		};
 		B109C6A423A234AB000AF35A /* Controller */ = {
@@ -307,6 +317,7 @@
 		B18E9687239F6F64003E2BAC /* Assignment1 */ = {
 			isa = PBXGroup;
 			children = (
+				B1041DB623A399160000B382 /* Task 12 */,
 				B1041DAD23A38E530000B382 /* Task 11 */,
 				B109C6B223A2543A000AF35A /* Task 10 */,
 				B109C6A623A236B1000AF35A /* Task 9 */,
@@ -329,6 +340,14 @@
 				B11FF17223A0B79E0036561F /* JSON Parse */,
 			);
 			path = "Task 6";
+			sourceTree = "<group>";
+		};
+		B19EF0FD23A4ABDD00916EB9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B1041DB723A39A1E0000B382 /* BrowserViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,6 +487,7 @@
 				B18E96AD239FB58F003E2BAC /* XMLModel.swift in Sources */,
 				B1041DB323A38E530000B382 /* Owner.swift in Sources */,
 				B11FF17E23A0F4130036561F /* JSONParsingManager.swift in Sources */,
+				B1041DB823A39A1E0000B382 /* BrowserViewController.swift in Sources */,
 				B18E9689239F6F64003E2BAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
