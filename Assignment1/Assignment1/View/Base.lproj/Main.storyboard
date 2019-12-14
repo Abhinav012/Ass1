@@ -199,6 +199,26 @@
                                     <segue destination="jZZ-eI-KeR" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="C1S-IJ-NDx"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UIEPickerCell" textLabel="aUd-6s-mb1" style="IBUITableViewCellStyleDefault" id="Im8-Dg-saq">
+                                <rect key="frame" x="0.0" y="407.5" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Im8-Dg-saq" id="w3f-1V-AK4">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Task 2 Show UI Date Picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aUd-6s-mb1">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Aas-k8-U8f" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="fM9-fM-l8v"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="tBx-bG-mic" id="29N-Xo-E3u"/>
@@ -757,7 +777,87 @@ updated_at: "2017-05-20T05:33:11Z"
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1vd-sR-W4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1688.8" y="-728.18590704647681"/>
+            <point key="canvasLocation" x="1729" y="-2113"/>
+        </scene>
+        <!--Pick View Controller-->
+        <scene sceneID="Hxb-bm-JcS">
+            <objects>
+                <viewController id="KY3-zS-P2T" customClass="PickViewController" customModule="Assignment1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oyf-yz-x63">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="pUZ-7E-UwJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="NhQ-Og-uiq"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="597999199.76959705">
+                                    <!--2019-12-14 06:53:19 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerAction:" destination="KY3-zS-P2T" eventType="valueChanged" id="que-T4-cqx"/>
+                                </connections>
+                            </datePicker>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUU-qE-Dvf">
+                                <rect key="frame" x="0.0" y="334" width="375" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="kZT-Ui-aOg"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="KY3-zS-P2T" id="2Eh-wY-Fuk"/>
+                                    <outlet property="delegate" destination="KY3-zS-P2T" id="NM3-BP-4rj"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkz-bJ-cYG">
+                                <rect key="frame" x="16" y="260" width="343" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="xZ1-VH-YqG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Week" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKT-ya-seb">
+                                <rect key="frame" x="16" y="530" width="343" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="j0k-Q4-kEc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sde-UQ-OHs" firstAttribute="trailing" secondItem="Nkz-bJ-cYG" secondAttribute="trailing" constant="16" id="4CO-sZ-seC"/>
+                            <constraint firstItem="pUZ-7E-UwJ" firstAttribute="trailing" secondItem="sde-UQ-OHs" secondAttribute="trailing" id="9qV-yx-RU1"/>
+                            <constraint firstItem="pUZ-7E-UwJ" firstAttribute="top" secondItem="sde-UQ-OHs" secondAttribute="top" id="GrB-y7-VUB"/>
+                            <constraint firstItem="pUZ-7E-UwJ" firstAttribute="leading" secondItem="sde-UQ-OHs" secondAttribute="leading" id="JR4-rQ-gcb"/>
+                            <constraint firstItem="Nkz-bJ-cYG" firstAttribute="leading" secondItem="sde-UQ-OHs" secondAttribute="leading" constant="16" id="NaW-HL-cRH"/>
+                            <constraint firstItem="qUU-qE-Dvf" firstAttribute="trailing" secondItem="sde-UQ-OHs" secondAttribute="trailing" id="TEw-nc-s4f"/>
+                            <constraint firstItem="RKT-ya-seb" firstAttribute="top" secondItem="qUU-qE-Dvf" secondAttribute="bottom" constant="34" id="WHT-JZ-qC3"/>
+                            <constraint firstItem="RKT-ya-seb" firstAttribute="leading" secondItem="sde-UQ-OHs" secondAttribute="leading" constant="16" id="WnJ-bd-1rf"/>
+                            <constraint firstItem="qUU-qE-Dvf" firstAttribute="top" secondItem="Nkz-bJ-cYG" secondAttribute="bottom" constant="16" id="fnD-wQ-SfA"/>
+                            <constraint firstItem="sde-UQ-OHs" firstAttribute="trailing" secondItem="RKT-ya-seb" secondAttribute="trailing" constant="16" id="phw-8U-3hS"/>
+                            <constraint firstItem="qUU-qE-Dvf" firstAttribute="leading" secondItem="sde-UQ-OHs" secondAttribute="leading" id="qJ3-rx-vgq"/>
+                            <constraint firstItem="Nkz-bJ-cYG" firstAttribute="top" secondItem="pUZ-7E-UwJ" secondAttribute="bottom" constant="34" id="yNh-fv-Cn5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sde-UQ-OHs"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8dg-HV-wBF">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="viY-K1-R2q"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dateLabel" destination="Nkz-bJ-cYG" id="N7i-li-XOi"/>
+                        <outlet property="datePicker" destination="pUZ-7E-UwJ" id="eGf-vH-TWR"/>
+                        <outlet property="menuButton" destination="viY-K1-R2q" id="HW9-aC-4sh"/>
+                        <outlet property="weekLabel" destination="RKT-ya-seb" id="YyD-Rp-KRK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fAn-SC-6l5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1689" y="-772"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ua4-ky-gxa">
@@ -1053,7 +1153,25 @@ updated_at: "2017-05-20T05:33:11Z"
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MPc-Lh-TGM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="-728"/>
+            <point key="canvasLocation" x="742" y="-2113"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Uy3-PZ-qQ1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Aas-k8-U8f" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="buS-IN-Cze">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KY3-zS-P2T" kind="relationship" relationship="rootViewController" id="Ot6-8O-sxi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Zr-es-sHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="742" y="-772"/>
         </scene>
     </scenes>
     <resources>

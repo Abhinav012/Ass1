@@ -35,6 +35,7 @@
 		B18E96A8239FAA6F003E2BAC /* sample.xml in Sources */ = {isa = PBXBuildFile; fileRef = B18E96A7239FAA6F003E2BAC /* sample.xml */; };
 		B18E96AD239FB58F003E2BAC /* XMLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E96AC239FB58F003E2BAC /* XMLModel.swift */; };
 		B19EF10023A4B07100916EB9 /* ShowUIElementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EF0FF23A4B07100916EB9 /* ShowUIElementsViewController.swift */; };
+		B19EF10323A4BD5F00916EB9 /* PickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19EF10223A4BD5F00916EB9 /* PickViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,6 +83,7 @@
 		B18E96A7239FAA6F003E2BAC /* sample.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = sample.xml; sourceTree = "<group>"; };
 		B18E96AC239FB58F003E2BAC /* XMLModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLModel.swift; sourceTree = "<group>"; };
 		B19EF0FF23A4B07100916EB9 /* ShowUIElementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowUIElementsViewController.swift; sourceTree = "<group>"; };
+		B19EF10223A4BD5F00916EB9 /* PickViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickViewController.swift; sourceTree = "<group>"; };
 		E747CC0933C2EC959BD232C2 /* Pods_Assignment1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Assignment1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF834BA8816F513B8AE827C7 /* Pods-Assignment1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Assignment1.debug.xcconfig"; path = "Target Support Files/Pods-Assignment1/Pods-Assignment1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -325,6 +327,7 @@
 				B109C6A623A236B1000AF35A /* Task 9 */,
 				B17566EE23A1F8A2004D4DE4 /* Task 8 */,
 				B18E96AB239FAB97003E2BAC /* Task 6 */,
+				B19EF10123A4BBFF00916EB9 /* Task 2 */,
 				B19EF0FE23A4AF7300916EB9 /* Task 1 */,
 				B11FF18223A106460036561F /* View */,
 				B11FF18123A1062C0036561F /* Resources */,
@@ -359,6 +362,14 @@
 				B19EF0FF23A4B07100916EB9 /* ShowUIElementsViewController.swift */,
 			);
 			path = "Task 1";
+			sourceTree = "<group>";
+		};
+		B19EF10123A4BBFF00916EB9 /* Task 2 */ = {
+			isa = PBXGroup;
+			children = (
+				B19EF10223A4BD5F00916EB9 /* PickViewController.swift */,
+			);
+			path = "Task 2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -490,6 +501,7 @@
 				B1041DB123A38E530000B382 /* Book.swift in Sources */,
 				B11FF17423A0B7F50036561F /* JSONParsedViewController.swift in Sources */,
 				B11FF17923A0F04A0036561F /* ParsingManager.swift in Sources */,
+				B19EF10323A4BD5F00916EB9 /* PickViewController.swift in Sources */,
 				B18E968B239F6F64003E2BAC /* ViewController.swift in Sources */,
 				B109C6B023A24D3D000AF35A /* Assignment1.xcdatamodeld in Sources */,
 				B109C6A023A214EF000AF35A /* Record.swift in Sources */,
