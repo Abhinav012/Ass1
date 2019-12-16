@@ -25,6 +25,8 @@
 		B11FF17623A0C0500036561F /* MyGithubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FF17523A0C0500036561F /* MyGithubModel.swift */; };
 		B11FF17923A0F04A0036561F /* ParsingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FF17823A0F04A0036561F /* ParsingManager.swift */; };
 		B11FF17E23A0F4130036561F /* JSONParsingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FF17D23A0F4130036561F /* JSONParsingManager.swift */; };
+		B12774E023A76A3700FA1395 /* SegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12774DF23A76A3700FA1395 /* SegueViewController.swift */; };
+		B12774E223A76AE500FA1395 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12774E123A76AE500FA1395 /* DestinationViewController.swift */; };
 		B17566F023A1F8CD004D4DE4 /* SQLiteOperationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17566EF23A1F8CD004D4DE4 /* SQLiteOperationsViewController.swift */; };
 		B18E9689239F6F64003E2BAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E9688239F6F64003E2BAC /* AppDelegate.swift */; };
 		B18E968B239F6F64003E2BAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E968A239F6F64003E2BAC /* ViewController.swift */; };
@@ -74,6 +76,8 @@
 		B11FF17523A0C0500036561F /* MyGithubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGithubModel.swift; sourceTree = "<group>"; };
 		B11FF17823A0F04A0036561F /* ParsingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingManager.swift; sourceTree = "<group>"; };
 		B11FF17D23A0F4130036561F /* JSONParsingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParsingManager.swift; sourceTree = "<group>"; };
+		B12774DF23A76A3700FA1395 /* SegueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueViewController.swift; sourceTree = "<group>"; };
+		B12774E123A76AE500FA1395 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
 		B17566EF23A1F8CD004D4DE4 /* SQLiteOperationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteOperationsViewController.swift; sourceTree = "<group>"; };
 		B18E9685239F6F64003E2BAC /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18E9688239F6F64003E2BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -333,6 +337,7 @@
 				B109C6A623A236B1000AF35A /* Task 9 */,
 				B17566EE23A1F8A2004D4DE4 /* Task 8 */,
 				B18E96AB239FAB97003E2BAC /* Task 6 */,
+				B19EF10C23A5087200916EB9 /* Task 5 */,
 				B19EF10723A4EA2200916EB9 /* Task 4 */,
 				B19EF10423A4C76E00916EB9 /* Task 3 */,
 				B19EF10123A4BBFF00916EB9 /* Task 2 */,
@@ -395,6 +400,15 @@
 				B19EF10A23A4EF7000916EB9 /* SampleCollectionViewCell.swift */,
 			);
 			path = "Task 4";
+			sourceTree = "<group>";
+		};
+		B19EF10C23A5087200916EB9 /* Task 5 */ = {
+			isa = PBXGroup;
+			children = (
+				B12774DF23A76A3700FA1395 /* SegueViewController.swift */,
+				B12774E123A76AE500FA1395 /* DestinationViewController.swift */,
+			);
+			path = "Task 5";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -519,6 +533,7 @@
 				B11FF17623A0C0500036561F /* MyGithubModel.swift in Sources */,
 				B19EF10623A4C7A800916EB9 /* TabViewController.swift in Sources */,
 				B1041DB223A38E530000B382 /* UserDefaultViewController.swift in Sources */,
+				B12774E023A76A3700FA1395 /* SegueViewController.swift in Sources */,
 				B18E96A8239FAA6F003E2BAC /* sample.xml in Sources */,
 				B17566F023A1F8CD004D4DE4 /* SQLiteOperationsViewController.swift in Sources */,
 				B109C6A823A236E1000AF35A /* CoreDataOperationViewController.swift in Sources */,
@@ -531,6 +546,7 @@
 				B19EF10323A4BD5F00916EB9 /* PickViewController.swift in Sources */,
 				B18E968B239F6F64003E2BAC /* ViewController.swift in Sources */,
 				B109C6B023A24D3D000AF35A /* Assignment1.xcdatamodeld in Sources */,
+				B12774E223A76AE500FA1395 /* DestinationViewController.swift in Sources */,
 				B19EF10B23A4EF7000916EB9 /* SampleCollectionViewCell.swift in Sources */,
 				B109C6A023A214EF000AF35A /* Record.swift in Sources */,
 				B18E96A6239F9CCC003E2BAC /* AssignmentListTableViewController.swift in Sources */,

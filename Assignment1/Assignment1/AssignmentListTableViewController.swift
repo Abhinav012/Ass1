@@ -29,7 +29,7 @@ class AssignmentListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 11
+        return 12
     }
 
     
@@ -76,8 +76,11 @@ class AssignmentListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UITabBarCell", for: indexPath)
         return cell
         }
-        
+        else if indexPath.row == 10{
         let cell = tableView.dequeueReusableCell(withIdentifier: "collectionViewCell", for: indexPath)
+        return cell
+        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "segueCell", for: indexPath)
         return cell
      }
     
