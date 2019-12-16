@@ -27,6 +27,7 @@
 		B11FF17E23A0F4130036561F /* JSONParsingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FF17D23A0F4130036561F /* JSONParsingManager.swift */; };
 		B12774E023A76A3700FA1395 /* SegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12774DF23A76A3700FA1395 /* SegueViewController.swift */; };
 		B12774E223A76AE500FA1395 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12774E123A76AE500FA1395 /* DestinationViewController.swift */; };
+		B12774E523A7807900FA1395 /* AutoLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B12774E423A7807900FA1395 /* AutoLViewController.swift */; };
 		B17566F023A1F8CD004D4DE4 /* SQLiteOperationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17566EF23A1F8CD004D4DE4 /* SQLiteOperationsViewController.swift */; };
 		B18E9689239F6F64003E2BAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E9688239F6F64003E2BAC /* AppDelegate.swift */; };
 		B18E968B239F6F64003E2BAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18E968A239F6F64003E2BAC /* ViewController.swift */; };
@@ -78,6 +79,7 @@
 		B11FF17D23A0F4130036561F /* JSONParsingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParsingManager.swift; sourceTree = "<group>"; };
 		B12774DF23A76A3700FA1395 /* SegueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueViewController.swift; sourceTree = "<group>"; };
 		B12774E123A76AE500FA1395 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
+		B12774E423A7807900FA1395 /* AutoLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLViewController.swift; sourceTree = "<group>"; };
 		B17566EF23A1F8CD004D4DE4 /* SQLiteOperationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteOperationsViewController.swift; sourceTree = "<group>"; };
 		B18E9685239F6F64003E2BAC /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B18E9688239F6F64003E2BAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -301,6 +303,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B12774E323A778B500FA1395 /* Assignment 6 */ = {
+			isa = PBXGroup;
+			children = (
+				B12774E423A7807900FA1395 /* AutoLViewController.swift */,
+			);
+			path = "Assignment 6";
+			sourceTree = "<group>";
+		};
 		B17566EE23A1F8A2004D4DE4 /* Task 8 */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +347,7 @@
 				B109C6A623A236B1000AF35A /* Task 9 */,
 				B17566EE23A1F8A2004D4DE4 /* Task 8 */,
 				B18E96AB239FAB97003E2BAC /* Task 6 */,
+				B12774E323A778B500FA1395 /* Assignment 6 */,
 				B19EF10C23A5087200916EB9 /* Task 5 */,
 				B19EF10723A4EA2200916EB9 /* Task 4 */,
 				B19EF10423A4C76E00916EB9 /* Task 3 */,
@@ -554,6 +565,7 @@
 				B1041D9723A34B550000B382 /* User.swift in Sources */,
 				B18E96AD239FB58F003E2BAC /* XMLModel.swift in Sources */,
 				B1041DB323A38E530000B382 /* Owner.swift in Sources */,
+				B12774E523A7807900FA1395 /* AutoLViewController.swift in Sources */,
 				B11FF17E23A0F4130036561F /* JSONParsingManager.swift in Sources */,
 				B1041DB823A39A1E0000B382 /* BrowserViewController.swift in Sources */,
 				B18E9689239F6F64003E2BAC /* AppDelegate.swift in Sources */,
