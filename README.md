@@ -27,4 +27,10 @@ This guide is a highlevel overview of how you can run this project. Common steps
     * Run all the cells at ones: Click on "Runtime" Menu and then select "Run all" from the dropdown menu.
     Alternatively, Use Keyboard Shortcuts. You can also use the keyboard shortcut to run all cells. use Ctrl + F9 for Windows/Linux and for Mac use Cmd + F9.
 
+# Objective of Study
 
+Objective of this analysis is to get an overview of findings which may help the company to focus on core areas where their is a scope of improvement leading to increase in profits.
+
+# Summary
+
+Airbnb data for New York City 2019 suggest that Manhatten and Brooklyn are the 2 most visited places among those who visited the city. It also suggest that most of the vistors like booking Entire Property/Apt and private rooms over bookings on sharing bases. The finding also shows Manhatten is the most expensive part while Brooklyn is the most prefered part people choose to stay at. If we do analysis on combine neighbourhood than we will find that Bedford, Williamsburg and Harlem are the most popular neighbourhoods among visitors. Analysis on property names suggest that host's have taken complete advantage of using such keywords which will help them attract maximum users by using words such as private room, beautiful, apartment and more in the listed names. A lot of visitors are intrested in staying for 1 to 5 nights, also Bedford-Stuyvesant has the most properties available through out the year and its price is also low. Same goes for Herlem. Over all the analysis is insightful and can help company to make multiple decisions.
